@@ -1,119 +1,363 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="id">
 <head>
-    <meta charset="UT-8">
-    <title>Curriculum Vitae - Thania Putri Febriyanty</title>
-    <style>
-        img {
-            width: 130px;
-            border-radius: 120px;
-            float: left;
-            margin-right: 30px;
-        }
-        .cv {
-            background-color: white;
-            width: 100%;
-            min-height: 100vh;
-            margin: 0;
-            padding: 40px;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            }
-    </style>
+<meta charset="UTF-8">
+<title>CV - Thania Putri Febriyanty</title>
+<style>
+  * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #e9e9e9;
+    padding: 40px 0;
+    color: #1a1a1a;
+  }
+
+  .cv-page {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 45px 55px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+    line-height: 1.45;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+  .header-photo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 2px solid #1a1a1a;
+  }
+  .header-text {
+    flex: 1;
+  }
+  .header h1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .header .contact {
+    font-size: 12px;
+    color: #333;
+  }
+  .header .contact a {
+    color: #333;
+    text-decoration: none;
+  }
+  .header .summary {
+    font-size: 11px;
+    margin-top: 10px;
+    text-align: justify;
+    color: #222;
+  }
+
+  .section {
+    margin-top: 22px;
+  }
+  .section-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1.5px solid #1a1a1a;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+  }
+
+  .entry {
+    margin-bottom: 12px;
+  }
+  .entry-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  .entry-org {
+    font-weight: 700;
+    font-size: 13px;
+  }
+  .entry-org a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .entry-org a:hover {
+    text-decoration: underline;
+  }
+  .entry-date {
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+    white-space: nowrap;
+  }
+  .entry-role {
+    font-style: italic;
+    font-size: 12.5px;
+    margin-top: 1px;
+    margin-bottom: 4px;
+  }
+
+  ul.bullets {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 12.5px;
+  }
+  ul.bullets li {
+    margin-bottom: 2px;
+  }
+
+  .sub-entry {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .sub-entry .entry-row {
+    margin-top: 2px;
+  }
+
+  .grid-two {
+    display: flex;
+    gap: 30px;
+  }
+  .grid-two .entry {
+    flex: 1;
+  }
+
+  @media (max-width: 640px) {
+    .cv-page {
+        padding: 25px;
+    }
+    .grid-two {
+        flex-direction: column; gap: 0;
+    }
+  }
+
+</style>
 </head>
-
 <body>
-    <div class="cv">
-    <h2>Curriculum Vitae</h2>
-    <a><img src="images/poto.jpeg" alt="Thania Putri Febriyanty"></a>
-    <h1>Thania Putri Febriyanty</h1>
-    <p>thaniapeotri@gmail.com | 085817618329 | Bogor, Indonesia</p>
-    <p><strong>Information Systems student at Telkom University Jakarta</strong>, passionate about technology, digital
-        innovation, and problem-solving. Experienced in finance, product creation, logistics, and documentation through
+
+<div class="cv-page">
+
+  <div class="header">
+    <img class="header-photo" src="images/poto.jpeg" alt="Foto Profil">
+    <div class="header-text">
+      <h1>THANIA PUTRI FEBRIYANTY</h1>
+      <div class="contact">
+        thaniapeotri@gmail.com &nbsp;|&nbsp; 085817618329 &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/thania-putri-febriyanty-994459317/"><u>Linkedin</u></a> &nbsp;|&nbsp; Bogor, Jawa Barat
+      </div>
+      <div class="summary">
+        Information Systems student at Telkom University Jakarta, passionate about technology, digital innovation,
+        and problem-solving. Experienced in finance, product creation, logistics, and documentation through
         SMAFOODFEST and Campus Expo. Combining technical expertise with creativity to deliver impactful digital
         solutions.
-    </p>
-    <br></br>
-    <h2 style="margin-bottom:8px;">Education</h2>
-
-<table style="border-collapse:collapse; width:100%;">
-  <tr>
-    <!-- Kolom kiri -->
-    <td style="padding:7px; border:2px solid transparent; width:20%; vertical-align:top;">
-      <strong>Boash High School (SMA Boash)</strong><br>
-      <i>Mathematics and Natural Sciences</i><br>
-      Grade: 90.66<br>
-    </td>
-    <!-- Kolom kanan -->
-    <td style="padding:5px; border:2px solid transparent; width:80%; vertical-align:top;">
-      Bogor<br>
-      Jul 2022 - Jul 2025
-    </td>
-  </tr>
-  <tr>
-    <td style="padding:8px; border:1px solid transparent; width:20%; vertical-align:top;">
-      <strong>Telkom University</strong><br>
-      <i>Information Systems</i>
-    </td>
-    <td style="padding:8px; border:1px solid transparent; width:80%; vertical-align:top;">
-      Jakarta<br>
-      Sep 2025 - Present
-    </td>
-  </tr>
-</table>
-
-    <h2>Experiences</h2>
-    <h4>Subject Ambassador - SMA Boash</h4>
-    <ul>
-        <li><strong>English Subject Ambassador</strong> (Nov 2022 - Jul 2023): Bridged communication, initiated English
-            Corner.</li>
-        <li><strong>Japanese Subject Ambassador</strong> (Nov 2022 - Jul 2023): Promoted Japanese practice, summarized
-            grammar, led exercises.</li>
-        <li><strong>Biology Subject Ambassador</strong> (Oct 2024 - Jul 2025): Supported peers, liaison for labs/exams,
-            led sessions.</li>
-    </ul>
-
-    <h4>SMAFOODFEST (SMA Boash)</h4>
-    <ul>
-        <li><strong>Finance Committee Member</strong> (Sep 2022 - Jul 2023): Managed budget, coordinated funds, recorded
-            transactions.</li>
-        <li>
-            <strong>Production Committee Member</strong> (Sep 2023 - Jul 2024): Oversaw production, designed concepts,
-            collaborated on pricing.
-        </li>
-        <li>
-            <strong>Documentation & Publication Committee Member</strong> (Aug 2024 - Jun 2025): Documented events,
-            created posters/social media, storytelling.
-        </li>
-    </ul>
-
-    <h4>HI CAMPUS (SMA Boash)</h4>
-    <p><strong>Logistics Committee Member (Nov 2025 - Jan 2026)</strong></p>
-    <ul>
-        <li>Prepared logistics budget plan (RAB).</li>
-        <li>Coordinated team tasks and managed equipment procurement/distribution.</li>
-        <li>Ensured efficient use of funds.</li>
-    </ul>
-
-    <h2>Certifications</h2>
-    <ul>
-        <li><strong>AI Fundamental - Dicoding Indonesia (Dec 2025)</strong></li>
-        <li><strong>Google AI - Google Career Certificate x Telkom University (Aug 2026)</strong></li>
-        <li><strong>Google Agile Essentials - Google Career Certificate x Telkom University (Aug 2026)</strong></li>
-        <li><strong>Google Cybersecurity - Google Career Certificate x Telkom University (Sep 2026)</strong></li>
-    </ul>
-
-    <h2>Competition and Achievement</h2>
-    <ul>
-        <li><strong>1st Winner - Business Model Canvas (BMC), CRAFT 2025 - University of Northern Sumatra (Nov 2025)</strong></li>
-        <li><strong>3rd Winner - Business Model Canvas (BMC), GENBI Creative Competition 2025 - Trunojoyo Madura University (Dec 2025)</strong></li>
-    </ul>
+      </div>
     </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Education Level</div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">Boash High School (SMA Boash) Bogor</span>
+        <span class="entry-date">Jul 2022 - Jul 2025</span>
+      </div>
+      <div class="entry-role">Mathematics and Natural Sciences</div>
+      <ul class="bullets">
+        <li>Grade: 90.66</li>
+        <li>Activities and societies: SMAFOODFEST (Finance, Product, Documentation Team), Subject Ambassador (English, Japanese, Biology)</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">Telkom University Jakarta</span>
+        <span class="entry-date">Sep 2025 - Present</span>
+      </div>
+      <div class="entry-role">Information System</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Experiences</div>
+
+    <div class="entry">
+      <div class="entry-org">Subject Ambassador - Boash High School (SMA Boash) Bogor</div>
+
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">English Subject Ambassador (Class Ambassador)</span>
+          <span class="entry-date">Nov 2022 - Jul 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Bridged communication between teachers and students.</li>
+          <li>Ensured clear delivery of academic information.</li>
+          <li>Initiated English Corner for daily conversation practice.</li>
+        </ul>
+      </div>
+
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">Japanese Language Subject Ambassador (Class Ambassador)</span>
+          <span class="entry-date">Nov 2022 - Jul 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Promoted Japanese use in casual practice.</li>
+          <li>Summarized material to aid understanding of grammar, vocabulary, and culture.</li>
+          <li>Led short vocabulary and pronunciation exercises before class.</li>
+        </ul>
+      </div>
+
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">Biology Subject Ambassador (Class Ambassador)</span>
+          <span class="entry-date">Oct 2024 - Jul 2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Supported peers in grasping Biology concepts.</li>
+          <li>Acted as liaison for assignments, labs, and exams.</li>
+          <li>Occasionally led class sessions, practicing teaching and management skills.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-org">SMAFOODFEST (SMA Food Festival by SMA Boash) Bogor</div>
+
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">Finance Committee Member</span>
+          <span class="entry-date">Sep 2022 - Jul 2023</span>
+        </div>
+        <ul class="bullets">
+          <li>Managed event budget and expenses.</li>
+          <li>Coordinated with teams for fund allocation.</li>
+          <li>Recorded financial transactions.</li>
+        </ul>
+      </div>
+
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">Production Committee Member</span>
+          <span class="entry-date">Sep 2023 - Jul 2024</span>
+        </div>
+        <ul class="bullets">
+          <li>Oversaw production from preparation to presentation.</li>
+          <li>Designed concepts, recipes, and product appearance.</li>
+          <li>Collaborated on pricing and sales strategies.</li>
+        </ul>
+      </div>
+
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">Documentation &amp; Publication Committee Member</span>
+          <span class="entry-date">Aug 2024 - Jun 2025</span>
+        </div>
+        <ul class="bullets">
+          <li>Documented events through photos and videos.</li>
+          <li>Created posters, social media feeds, and recaps.</li>
+          <li>Built skills in design and storytelling.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-org">HI CAMPUS (SMA Boash) Bogor</div>
+      <div class="sub-entry">
+        <div class="entry-row">
+          <span class="entry-role">Logistics Committee Member</span>
+          <span class="entry-date">Nov 2025 - Jan 2026</span>
+        </div>
+        <ul class="bullets">
+          <li>Prepared logistics budget plan (RAB).</li>
+          <li>Coordinated team tasks and managed equipment procurement/distribution.</li>
+          <li>Ensured efficient use of funds.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Certification</div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">
+            <a href="https://www.dicoding.com/certificates/GRX5JR32YX0M" target="_blank"><u>AI Fundamental</u></a></span>
+
+        <span class="entry-date">Dec 2025</span>
+      </div>
+      <div class="entry-role">Dicoding Indonesia</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">
+        <a href="https://www.coursera.org/account/accomplishments/professional-cert/certificate/D62HJ8D7FTDA" target="_blank"><u>Google AI</u></a>
+        </span>
+        <span class="entry-date">Aug 2026</span>
+      </div>
+      <div class="entry-role">Google Career Certificate x Telkom University</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/VRQZEVWM3S97" target="_blank"><u>Google Agile Essentials</u></a>
+        </span>
+        <span class="entry-date">Aug 2026</span>
+      </div>
+      <div class="entry-role">Google Career Certificate x Telkom University</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/00OUVM2682QP" target="_blank"><u>Google Cybersecurity</u></a>
+        </span>
+        <span class="entry-date">Sep 2026</span>
+      </div>
+      <div class="entry-role">Google Career Certificate x Telkom University</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Competition and Achievement</div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">
+            <a href="https://drive.google.com/file/d/1EKUkNKPb8CvkJyY7uoBG7TEMP27I8RHu/view" target="_blank"></a><u>1st Winner - National Business Model Canvas (BMC)</u></a></span>
+        <span class="entry-date">Nov 2025</span>
+      </div>
+      <div class="entry-role">CRAFT 2025 - University of Northern Sumatra</div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-row">
+        <span class="entry-org">
+            <a href="https://drive.google.com/file/d/1ho5OS_sZ_yFPAVSfw1YBCwl6jwsM_xsv/view" target="_blank"></a><u>3rd Winner - National Business Model Canvas (BMC)</u></a></span>
+        <span class="entry-date">Des 2025</span>
+      </div>
+      <div class="entry-role">GENBI Creative Competition 2025 - Trunojoyo Madura University</div>
+    </div>
+  </div>
+
+</div>
+
 </body>
+</html>
